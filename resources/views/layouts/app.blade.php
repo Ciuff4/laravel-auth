@@ -33,7 +33,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        @auth()
+                        <a class="navbar-brand" href="{{ route('admin.posts.index') }}">
+                            Vedi tutti i Post
+                        </a>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
